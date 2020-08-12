@@ -83,6 +83,13 @@ Commit moves on Face_1.
   }
 
 ```
+Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at the following.
+
+
+<p align="center">
+  <img width="460" height="300" src="Plots/3_dimensoin_simulation.PNG" >
+</p>
+
 
  
 ### Rubik cube with N * N dimensions:
