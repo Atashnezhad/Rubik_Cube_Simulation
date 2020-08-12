@@ -162,5 +162,5 @@ The first building block of the program is provided at the following. A similar 
 Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at the following.
 
 <p align="center">
-  <img width="460" height="300" src="Plots/N_dimensoin_simulation.PNG" >
+  <img src="Plots/N_dimensoin_simulation.PNG" >
 </p>
