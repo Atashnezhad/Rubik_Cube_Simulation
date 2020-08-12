@@ -3,7 +3,7 @@
 # One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i])which takes the moves on each Rubik's cube faces and memorizes it and pass it to the base matrix (F[i]).
 # Create two types of the matrix for each Face. One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i])which takes the moves on each Rubik's cube faces and memorizes it and pass it to the base matrix (F[i]).
 
-N <- 3 # Rubik'c Cube Dimension
+N <- 10 # Rubik'c Cube Dimension
 NumOfFaces <- 6 #number of cube faces which is 6 for 3*3 rubik cube. For shapes with more faces (more than 6) this gigit should be opened and investigated!
 #This digit acts like a cofficent of a model in determinstic models. However, in fact it has lot of independant parameters in it.
 F1 <- matrix(1, N,N)
@@ -21,7 +21,7 @@ FS6 <- matrix(6, N,N) # super position matrix
 
 
 
-rubik_Scrambling_Num <- 1
+rubik_Scrambling_Num <- 100
 for (i in 1:rubik_Scrambling_Num){
 
   #Generate a random integer between 1 and 6 (NumOfFaces).
