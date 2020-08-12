@@ -97,3 +97,68 @@ Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at
 
 ---
 ### Rubik cube with N * N dimensions:
+
+The program steps are provided at the following:
+
+* Create two types of the matrix for each Face.
+* One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i]) which takes the moves on each Rubik's cube faces and memorizes and passes it to the base matrix (F[i]).
+* Create two types of the matrix for each Face. One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i]) which takes the moves on each Rubik's cube faces and memorizes it and pass it to the base matrix (F[i]).
+
+* number of cube faces which is 6 for 3 * 3 rubik cube. For shapes with more faces (more than 6) this gigit should be opened and investigated! This digit acts like a cofficent of a model in determinstic models. However, in fact it has lot of independant parameters in it.
+
+The first building block of the program is provided at the following. A similar procedure is taken for the rest 5 Faces of Rubik cube.
+
+```R
+  #Face#1, Rotate clockwise(Move=1) or counterclockwise(Move=2)
+  if (Face_Direction ==1){
+    if (layer_number==1){
+      if (Move ==1){
+        for (i in 1:floor(N/2)){
+          for (j in i:(N-i)){
+            FS1[i,j] <- F1[N+1-i,i]
+            FS1[j,N+1-i] <- F1[i,j]
+            FS1[N+1-i,N+1-i] <- F1[j,N+1-i]
+            FS1[N+1-i,i] <- F1[N+1-i,N+1-i]
+          }
+        }
+      }
+      else {
+        for (i in 1:floor(N/2)){
+          for (j in i:(N-i)){
+            FS1[i,j] <- F1[j,N+1-i]
+            FS1[j,N+1-i] <- F1[N+1-i,N+1-i]
+            FS1[N+1-i,N+1-i] <- F1[N+1-i,i]
+            FS1[N+1-i,i] <- F1[i,j]
+          }
+        }
+      }
+    }
+    #update other face#1 neighbors if move is 1
+    if (Move==1){
+      FS2[1:N,N+1-layer_number] <- F3[1,1:N]
+      FS5[N+1-layer_number,1:N] <- F2[1:N,N+1-layer_number]
+      FS4[1:N,layer_number] <- F5[N+1-layer_number,1:N]
+      FS3[layer_number,1:N] <- F4[1:N,layer_number]
+    }
+    else {
+      FS2[1:N,N+1-layer_number] <- F5[N+1-layer_number,1:N]
+      FS5[N+1-layer_number,1:N] <- F4[1:N,layer_number]
+      FS4[1:N,layer_number] <- F3[1,1:N]
+      FS3[layer_number,1:N] <- F2[1:N,N+1-layer_number]
+    }
+    #update base matrixs#1
+    F1 <- FS1
+    F2 <- FS2
+    F3 <- FS3
+    F4 <- FS4
+    F5 <- FS5
+    F6 <- FS6
+  }
+
+```
+
+Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at the following.
+
+<p align="center">
+  <img width="460" height="300" src="Plots/N_dimensoin_simulation.PNG" >
+</p>
