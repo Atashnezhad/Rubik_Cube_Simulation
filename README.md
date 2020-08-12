@@ -4,7 +4,7 @@
   <img src="Plots/N_dimensoin_simulation3.PNG" >
 </p>
 
-
+**Above is a simulation for a Rubik's cube with 10 dimensions after shuffling 100 times generated in this project.**
 
 Rubik cube is 3D pazzel invented by professor of architecture Erno Rubik in 1974. It has approximately 43 quintillion different arrangments (status). To put this into perspective, if one had one standard-sized Rubik's Cube for each status, one could cover the Earth's surface 275 times, or stack them in a tower 261 light-years high.
 
