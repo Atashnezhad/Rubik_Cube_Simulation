@@ -1,10 +1,8 @@
 #Rubik's Cube Modeling NNN
-#Creat two type of matrixs for each Face.
-#One is called base matrix (F[i]) and another one is superposition matrix (FS[i])which takes the moves on
-#each rubiks cube faces and memorize it and pass it to the base matrix (F[i]).
+# Create two types of the matrix for each Face.
+# One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i])which takes the moves on each Rubik's cube faces and memorizes it and pass it to the base matrix (F[i]).
+# Create two types of the matrix for each Face. One is called the base matrix (F[i]) and another one is the superposition matrix (FS[i])which takes the moves on each Rubik's cube faces and memorizes it and pass it to the base matrix (F[i]).
 
-#Creat two type of matrixs for each Face. One is called base matrix (F[i]) and another one is superposition matrix (FS[i])which
-#takes the moves on each rubiks cube faces and memorize it and pass it to the base matrix (F[i])
 N <- 3 # Rubik'c Cube Dimension
 NumOfFaces <- 6 #number of cube faces which is 6 for 3*3 rubik cube. For shapes with more faces (more than 6) this gigit should be opened and investigated!
 #This digit acts like a cofficent of a model in determinstic models. However, in fact it has lot of independant parameters in it.
