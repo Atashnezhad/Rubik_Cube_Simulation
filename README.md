@@ -1,6 +1,8 @@
 # Rubik Cube Simulation
 
-
+<p align="center">
+  <img src="Plots/N_dimensoin_simulation3.PNG" >
+</p>
 
 
 
