@@ -159,8 +159,15 @@ The first building block of the program is provided at the following. A similar 
 
 ```
 
-Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at the following.
+A simulation for 5 * 5 Rubik cube after 10 randomly moves is provided at the following.
+
+<p align="center">
+  <img src="Plots/N_dimensoin_simulation2.PNG" >
+</p>
+
+and another representation is as follow:
 
 <p align="center">
   <img src="Plots/N_dimensoin_simulation.PNG" >
 </p>
+
