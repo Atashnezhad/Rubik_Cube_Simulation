@@ -1,5 +1,5 @@
 # Rubik Cube Simulation
----
+
 
 
 
@@ -16,7 +16,9 @@ The program steps are provided at the following:
 * Chose the face randomly that the move gonna be committed on.
 * Generate a random integer between 1 and 2. The 1 clockwise turns and 2 is counterclockwise.
 * Committee moves on the Rubik cube Face and updates the superposition matrix. Or you may apply your favorite move and do sensitivity analysis
-The Moves are committed based on the Face and move direction. The first building block of the program is provided at the following. A similar procedure is taken for the rest 5 Faces of Rubik cube.
+The Moves are committed based on the Face and move direction. 
+
+The first building block of the program is provided at the following. A similar procedure is taken for the rest 5 Faces of Rubik cube.
 
 Commit moves on Face_1.
 
