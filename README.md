@@ -9,8 +9,9 @@ Rubik cube is 3D pazzel invented by professor of architecture Erno Rubik in 1974
 The standard rubik cube has 6 faces, on each face has 9 fixed colors. The standard moves are R(turning clokewise) and R'(turn-counterclockwise) These two moves can be apploied to each face which generate different moves which are called R(right), R'(reverse-right), L(left),L'(reverse-left), U, U', B, B' and so on...
 Two Rubik cube computer models developed for 3 * 3 and N * N cubes.
  
----
+
 ## Rubik cube with 3 * 3 dimensions:
+---
 The program steps are provided at the following:
 * Generate a random integer between 1 and 6 (NumOfFaces). 
 * Chose the face randomly that the move gonna be committed on.
@@ -95,8 +96,9 @@ Once the moves are commited the resuls are ploted in 2 * 3 figure as prvodied at
 </p>
 
 
----
+
 ### Rubik cube with N * N dimensions:
+---
 
 The program steps are provided at the following:
 
