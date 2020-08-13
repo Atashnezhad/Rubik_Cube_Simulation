@@ -14,6 +14,30 @@ Two Rubik cube computer models developed for 3 * 3 and N * N cubes.
 
 ## Rubik cube with 3 * 3 dimensions:
 ---
+The Rubik cube open schematic along with a matrix is shown below. The matrix is called the superposition matrix (M') which saves the information from previous moves in it (M).
+
+<p align="left">
+  <img width="500" src="Handouts/matrix_2.jpg" >
+</p>
+
+---
+
+The relations between **M** and **M'** for second face of Rubik cube are seen at the following handout.
+
+<p align="left">
+  <img width="650" src="Handouts/face2and3 _2.jpg" >
+</p>
+
+
+---
+The cube faces are numbered (between 1 to 6) along with the digits (1 to 9 = 3 * 3) . The movement of digits on each face and the faces which are engaged are seen in the below handout.
+
+<p align="left">
+  <img width="650" src="Handouts/simulation3.jpg" >
+</p>
+
+
+
 The program steps are provided at the following:
 * Generate a random integer between 1 and 6 (NumOfFaces). 
 * Chose the face randomly that the move gonna be committed on.
